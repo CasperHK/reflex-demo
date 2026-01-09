@@ -10,7 +10,7 @@ This is a reflex demo app using uv as package manager.
    ```bash
    cd reflex-demo-app
    ```
-3. Install all required dependencies listed in the pyproject.toml or uv.lock file.
+3. Install all required dependencies listed in the `pyproject.toml` or `uv.lock` file.
    ```bash
    uv sync --all-extras
    ```
