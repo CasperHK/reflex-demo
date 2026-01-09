@@ -1,7 +1,7 @@
 # Reflex Demo Web App
 This is a reflex demo app using uv as package manager.
 
-## Rerequirement
+## Prerequisite
 [uv](https://docs.astral.sh/uv/) installed.
 
 ## Getting Started
