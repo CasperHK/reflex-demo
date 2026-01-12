@@ -15,10 +15,11 @@ def navbar() -> rx.Component:
         # Navigation tags/links
         rx.spacer(),
         rx.hstack(
-            rx.link("Home", href="/", color="gray.6", hover_color="blue.600"),
-            rx.link("About", href="/about", color="gray.6", hover_color="blue.600"),
-            rx.link("Contact", href="/contact", color="gray.6", hover_color="blue.600"),
-            rx.link("Docs", href="https://reflex.dev/docs/getting-started/introduction/", is_external=True, color="gray.6", hover_color="blue.600"),
+            rx.link("Home", href="/", color="gray.600", _dark={"color": "gray.400"}, _hover={"color": "blue.600"}),
+            rx.link("About", href="/about", color="gray.600", _dark={"color": "gray.400"}, _hover={"color": "blue.600"}),
+            rx.link("Dashboard", href="/dashboard", color="gray.600", _dark={"color": "gray.400"}, _hover={"color": "blue.600"}),
+            rx.link("Contact", href="/contact", color="gray.600", _dark={"color": "gray.400"}, _hover={"color": "blue.600"}),
+            rx.link("Docs", href="https://reflex.dev/docs/getting-started/introduction/", is_external=True, color="gray.600", _dark={"color": "gray.400"}, _hover={"color": "blue.600"}),
             spacing="4",
         ),
         # Color mode button
@@ -26,6 +27,7 @@ def navbar() -> rx.Component:
         justify="between",
         padding="16px",
         border_bottom="1px solid #ddd",
+        _dark={"border_bottom": "1px solid #333", "bg": "#1a202c"},
         bg="white",
         position="sticky",
         top="0",
